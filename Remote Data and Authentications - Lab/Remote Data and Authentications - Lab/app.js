@@ -29,8 +29,7 @@ function createRecipe(recipe) {
 
     recipeElement.addEventListener('click', () => {
         fetch(`${baseUrl}/jsonstore/cookbook/details/${recipe._id}`)
-            .then(res => res.json())
-            .then(details => {
+            .then{
                 // Problem: need to remove event listeners
                 const mainElement = document.querySelector('main');
                 mainElement.innerHTML = '';
