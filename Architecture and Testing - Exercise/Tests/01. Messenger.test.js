@@ -13,7 +13,7 @@ describe('Accordion tests', function () {
     afterEach(async () => { await page.close(); });
 
     it('load messages', async () => {
-        await page.goto('http://localhost:3000');
+        await page.goto('http://localhost:5500');
 
         await page.click('text=Refresh');
 
@@ -27,7 +27,7 @@ describe('Accordion tests', function () {
     });
 
     it('send message', async () => {
-        await page.goto('http://localhost:3000');
+        await page.goto('http://localhost:5500');
 
         await page.fill('#author', 'Peter');
         await page.fill('#content', 'Hi, guys!');
